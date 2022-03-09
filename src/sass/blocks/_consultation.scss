@@ -1,119 +1,39 @@
 .consultation {
-    min-height: 475px;
-    padding: 73px 0 65px 0;
-    background-color: #F6F6F6;
-    &__header {
-        font-weight: bold;
-        font-size: 30px;
+    min-height: 680px;
+    padding: 100px 0 92px 0;
+    background: url('../../img/bg2.png')center (center/cover) no-repeat;
+    &__descr {
+        font-weight: 500;
+        font-size: 20px;
         line-height: 30px;
         align-items: flex-end;
-        text-align: center;
-        color: #0D0D0D;
-    }
-    &__icons {
-        margin-top: 60px;
-        display: flex;
-        justify-content: space-between;
-        width: 940px;
-    }
-    &__icon {
-        img {
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-        &_header {
-            text-align: center;
-            margin-top: 35px;
-            font-weight: bold;
-            font-size: 18px;
-            align-items: flex-end;
-            color: #0D0D0D;
-        }
-        &_subheader {
-            margin-top: 20px;
-            width: 270px;
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 18px;
-            align-items: flex-end;
-            text-align: center;
-            color: #0D0D0D;
-            a {
-                font-size: 14px;
-                line-height: 18px;
-                align-items: flex-end;
-                text-align: center;
-                text-decoration-line: underline;
-                color: #FF0000;
-                &:hover {
-                    text-decoration-line: none;
-                    transition: all .4s;
-                }
-            }
-        }
+        color: #FFFFFF;
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .consultation {
-        &__icons {
-            width: 768px;
+        .container {
+            max-width: 670px;
         }
-        &__icon {
-            &_header {
-                font-size: 15px;
-            }
-            &_subheader {
-                font-size: 9px;
-                width: 270px;
-                a {
-                    font-size: 9px;
-                }
-            }
-        }
+    }
+    .title_left {
+        font-size: 30px;
     }
 }
 
 @media (max-width: 768px) {
     .consultation {
-        &__icons {
-            width: 760px;
+        .container {
+            max-width: 360px;
         }
-        &__icon {
-            &_header {
-                font-size: 15px;
-            }
-            &_subheader {
-                font-size: 9px;
-                width: 150px;
-                a {
-                    font-size: 9px;
-                }
-            }
+        &__descr {
+            font-size: 13px;
+            line-height: 20px;
         }
     }
-}
-
-@media (max-width: 425px) {
-    .consultation {
-        &__header {
-            font-size: 20px;
-        }
-        &__icons {
-            width: 320px;
-        }
-        &__icon {
-            &_header {
-                font-size: 10px;
-            }
-            &_subheader {
-                font-size: 7px;
-                width: 100px;
-                a {
-                    font-size: 7px;
-                }
-            }
-        }
+    .title_left {
+        font-size: 15px;
+        line-height: 20px;
     }
 }
